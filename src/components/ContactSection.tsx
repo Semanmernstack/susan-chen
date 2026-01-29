@@ -174,8 +174,8 @@ const ContactSection = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="relative border-gold/30 text-cream hover:bg-gold/10 hover:border-gold px-10 py-7 text-base font-medium rounded-full transition-all duration-300"
-                onClick={() => window.location.href = 'mailto:contact@susanchen.com'}
+                className="relative border-gold/30 text-charcoal hover:bg-gold/10 hover:border-gold px-10 py-7 text-base font-medium rounded-full transition-all duration-300"
+                onClick={() => window.location.href = 'mailto:susanchen.capital@gmail.com'}
               >
                 <Mail className="mr-2 w-5 h-5" />
                 Invite Susan to Speak

@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ExternalLink, Newspaper, MessageCircle, BookMarked, Sparkles } from "lucide-react";
-import bookCover from "@/assets/book-cover.jpg";
+import book from "@/assets/book.png";
 
 const insights = [
   {
@@ -196,27 +196,13 @@ const InsightsSection = () => {
                 </p>
 
                 {/* Book cover with 3D effect */}
-                <motion.div 
-                  className="relative"
-                  whileHover={{ rotateY: 10, rotateX: -5 }}
-                  style={{ transformStyle: "preserve-3d", perspective: 1000 }}
-                >
-                  <div className="aspect-[3/4] max-w-xs mx-auto rounded-xl overflow-hidden shadow-elevated group-hover:shadow-gold transition-shadow duration-500">
-                    <motion.img 
-                      src={bookCover} 
-                      alt="Book Cover - A New Blueprint for AI and Investment in the Global South"
-                      className="w-full h-full object-cover"
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.5 }}
-                    />
-                  </div>
-                  {/* Reflection/glow */}
-                  <motion.div
-                    animate={{ opacity: [0.2, 0.4, 0.2] }}
-                    transition={{ duration: 3, repeat: Infinity }}
-                    className="absolute -inset-4 bg-gold/20 rounded-2xl blur-xl -z-10"
-                  />
-                </motion.div>
+                <div className="max-w-lg mx-auto">
+  <img 
+    src={book} 
+    alt="Book Cover"
+    className="w-full h-auto rounded-xl shadow-lg"
+  />
+</div>
               </div>
             </motion.div>
           </motion.div>
